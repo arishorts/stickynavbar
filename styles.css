@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+html {
+  scroll-padding-top: 10rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 200vh;
+  font-size: 3rem;
+}
+
+.navbar {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /*height: 4rem;*/
+  font-size: 3.5rem;
+  background: white;
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  transition: background-color 0.4s, opacity 0.4s;
+}
+
+.navbar.active {
+  opacity: 0;
+}
+.navbar.active ul li a {
+  color: white;
+}
+
+.top-container {
+  /*margin-top: 4rem; not sure why margin mworked instead of padding this time*/
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url(desola-lanre-ologun-USp4Gzr-Hdw-unsplash.jpg);
+  min-width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 0.3rem; /*i forget about this and line spacing often. my typography skills arent as sharp but can be with practice*/
+}
+
+.top-container h1 {
+  display: inline-block;
+  color: white;
+  font-size: 5rem;
+  margin-right: 5rem;
+}
+
+.navbar ul {
+  /*it makes more sense to select the class of the wrapper then an element within that. Makes the code more readable*/
+  display: flex;
+  min-width: 40%;
+  justify-content: space-between;
+  list-style: none;
+  font-size: inherit;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  margin: 0 1rem;
+  color: black;
+  font-family: cursive;
+}
+
+.navbar ul li a:hover {
+  color: red;
+}
+
+img {
+  max-width: 100%;
+}
+
+.blog {
+  margin: 50px 5%;
+  font-family: sans-serif;
+}
